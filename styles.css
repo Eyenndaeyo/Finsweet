@@ -1,0 +1,112 @@
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+header{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    padding: 14px 10px;
+}
+header .logo{
+    font-size: sm;
+}
+nav{
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+}
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    column-gap: 45px;
+    list-style: none;
+    border-right: 1px solid gray;
+    padding: 5px 20px 5px 0px;
+}
+.right-contact{
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+nav .right-contact .contact{
+    font-size: 15px;
+    line-height: 24px;
+}
+main{
+background-color:white;
+height: 90vh;
+width: 80%;
+margin: auto;
+display: flex;
+flex-direction: column;
+align-items: baseline;
+justify-content: center;
+}
+main .container{
+    height: 80%;
+    width: 100%;
+    display: flex;
+}
+main .container .left-writting{
+width: 50%;
+height: 100%;
+
+
+
+}
+main .container .right-image{
+width: 50%;
+height: 100%;
+background-image: url("Image.png");
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+position: relative;
+}
+main .container .right-image .service{
+    width: 90%;
+    left: -26%;
+    top: -70px;
+    position: absolute;
+}
+main .container .right-image .rating{
+    width: 90%;
+    position: absolute;
+    bottom: -120px;
+    right: -25%;
+}
+main .container .left-writting h1{
+  width: 400px;
+  font-family: monospace;
+  font-weight: 900px;
+  font-size: 30px;
+  letter-spacing: 4px;
+  margin-top: 80PX;
+  margin-bottom: 30px;
+  position: relative;
+
+  
+}
+main button{
+    width: Hug (203px);
+    height: Hug (64px);
+    top: 536px;
+    left: 320px;
+    padding: 15PX;
+    border-radius: 12px;
+    gap: 10px;
+    background-color:  #FF6433;
+    border: 0px solid ;
+    color: white;
+    font-size: larger;
+    margin-bottom: 40px;
+}
+ .open{
+    display: flex;
+   column-gap: 15px;
+}
