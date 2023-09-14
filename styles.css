@@ -2,18 +2,71 @@
     padding:0;
     margin: 0;
     box-sizing: border-box;
-
+    font-family: 'Manrope', sans-serif;
 }
 header{
     width: 80%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: auto;
-    padding: 14px 10px;
+    /* margin: auto; */
+    background-color: white;
+    padding-top:10px;
+    position: fixed;
+    z-index: 50;
+    right: 10%;
 }
+/* general styling starts here */
+.container{
+    height: 80%;
+    width: 80%;
+    display: flex;
+    margin: auto;
+    /* top: 20px; */
+    /* margin-top: 50px; */
+    background-color: aqua; 
+    /* gap: 20px; */
+}
+.container .right-side{
+    width: 50%;
+    height: 100%;
+    background-color: bisque;
+    }
+ .container .left-side{
+        width: 50%;
+        height: 100%;
+ }
+ ::placeholder{
+    color:black;
+    padding-left: 30px;
+ }
+    /* general styling stops here */
+
+    /* section stlyling */
+.car-service-home{
+    height: 100vh;
+    width: 100%;
+    /* background-color: #FF6433; */
+    margin: auto;
+    display: flex;
+    /* flex-direction: column; */
+    align-items: baseline;
+    justify-content: center;
+}
+
+
+/* header styling begins here */
 header .logo{
     font-size: sm;
+}
+header .right-contact .icon{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #61c3a1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 nav{
     display: flex;
@@ -37,60 +90,57 @@ nav .right-contact .contact{
     font-size: 15px;
     line-height: 24px;
 }
+/* header styling ends here */
 main{
-background-color:white;
-height: 90vh;
-width: 80%;
+height:100vh;
+width: 100%;
 margin: auto;
 display: flex;
-flex-direction: column;
+/* flex-direction: column; */
 align-items: baseline;
 justify-content: center;
 }
-main .container{
+/* main .container{
     height: 80%;
-    width: 100%;
+    width: 80%;
     display: flex;
-}
-main .container .left-writting{
-width: 50%;
-height: 100%;
-
-
-
-}
-main .container .right-image{
-width: 50%;
-height: 100%;
-background-image: url("Image.png");
-background-position: center;
-background-repeat: no-repeat;
-background-size: cover;
-position: relative;
-}
-main .container .right-image .service{
+    margin: auto;
+    background-color: aqua; 
+} */
+ 
+ main .container .right-side{
+    width: 50%;
+    height: 100%;
+    background-color: blue;
+    background-image: url("Image.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    
+    }
+main .container .right-side .service{
     width: 90%;
     left: -26%;
     top: -70px;
     position: absolute;
 }
-main .container .right-image .rating{
+main .container .right-side .rating{
     width: 90%;
     position: absolute;
     bottom: -120px;
     right: -25%;
 }
-main .container .left-writting h1{
+main .container .left-side{
+    background-color: white;
+}
+main .container .left-side h1{
   width: 400px;
-  font-family: monospace;
   font-weight: 900px;
   font-size: 30px;
   letter-spacing: 4px;
   margin-top: 80PX;
-  margin-bottom: 30px;
-  position: relative;
-
-  
+  margin-bottom: 30px;  
 }
 main button{
     width: Hug (203px);
@@ -109,4 +159,233 @@ main button{
  .open{
     display: flex;
    column-gap: 15px;
+}
+.open i{
+    padding-top: 20px;
+}
+/* we-take-car styling */
+#we-take-car{
+    background-color: #E2E6E9;
+    height: 100vh;
+    width: 100%;
+    /* margin: auto; */
+}
+.car-service-home.right-side p {
+    
+}
+.we-take-car-form form input {
+    width: 100%;
+    height: 50px;
+    margin-bottom: 10px;
+    border: 0px;
+}
+ /* form input ::placeholder{
+    margin-left: 70px;
+    
+} */
+#we-take-car .container .left-side p {
+    font-family: Manrope;
+    font-size: 58px;
+    font-weight: 800;
+    line-height: 76px;
+    letter-spacing: -0.03em;
+    text-align: left;
+    margin-bottom: 30px;
+}
+#we-take-car .container .right-side p{
+    font-family: Manrope;
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 67px;
+    letter-spacing: -0.03em;
+    text-align: left;
+    margin-bottom: 20px;
+}
+#we-take-car .container .left-side{
+    background-color: #E2E6E9
+}
+#we-take-car .container .right-side{
+    background-color: #E2E6E9;
+}
+ button{
+    background-color: #FF6433;
+    padding: 10px;
+    border-radius: 10px;
+    border: 0;
+    color: white;
+}
+#we-take-car .container .left-side .gear{
+    height: 30px;
+    width: 30px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#we-take-car .container .left-side h5{
+    margin-left: 40px;
+}
+#we-take-car .container .left-side .convenience {
+    display: flex;
+    column-gap: 10px;
+}
+#we-take-car .container .left-side .convenience .write-ups p{
+    font-size: 16px;
+    font-weight: 200;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+#we-follow .container .left-side{
+    background-color: white;
+}
+#we-follow .container .right-side{
+    background-color: white;
+}
+#we-follow .container .left-side h1{
+    font-size: 58px;
+    font-weight: 800;
+    line-height: 76px;
+    letter-spacing: -0.03em;
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
+#we-follow .container .left-side p{
+ margin-bottom: 20px;
+ 
+}
+#we-follow .container .right-side .convenience{
+    display: flex;
+    column-gap: 10px;
+    margin-top: 40px;
+}
+
+#we-follow .container .right-side .icons {
+    background-color: #661ce7;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+
+}
+#we-follow .container .right-side .convenience .write-ups h4{
+    margin-bottom: 20px;
+    margin-top: 10px;
+    padding-left: 20px;
+}
+#we-follow  .get-a-quote{
+    border-left: 1px dotted #FF6433;
+    padding-left: 60px;
+}
+/* we offer styling begins here */
+#we-offer{
+    background-color: #E2E6E9;
+}
+#we-offer .container{
+    background-color: #E2E6E9;
+}
+#we-offer .what-we-offer-content{
+    text-align: center;
+    width: 100%;
+}
+#we-offer .what-we-offer-content H5{
+    color: black;
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+#we-offer .what-we-offer-content .what-we-offer-box{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+#we-offer .what-we-offer-content .what-we-offer-box .box{
+    background-color: white;
+    width: 220px;
+    height: 150px;
+}
+#we-offer .what-we-offer-content .what-we-offer-box .box i{
+    margin-top: 50px;
+}
+#we-offer .what-we-offer-content .what-we-offer-box .box .box-3{
+    background-color: #FF6433;
+    width: 220px;
+    height: 150px;
+}
+#we-offer .what-we-offer-content .what-we-offer-box .box .box-3 h6{
+    color: white;
+}
+#Get-in-touch{
+    height: 80vh;
+    width: 100%;
+    background-color: #FF6433;
+   
+}
+#Get-in-touch .up-section{
+    height: 80%;
+    width: 100%;
+    display: flex;
+    
+}
+#Get-in-touch .up-section .left{
+    height: 100%;
+    width: 50%;
+    background-image: url("car-left.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: flex-end;
+}
+#Get-in-touch .up-section .left .contain{
+    height: 100%;
+    width: 70%;
+    background-color: #FF6433;
+}
+#Get-in-touch .up-section .left .contain p{
+    font-size: 30px;
+    font-weight: 700;
+    margin: 50px;
+    margin-top: 80px;
+    /* line-height: 67px; */
+    color: white;
+}
+#Get-in-touch .up-section .left .contain button{
+    background-color: black;
+    padding: 16px, 40px, 16px, 40px;
+    border-radius: 12px;
+    gap: 10px;
+    margin-left: 50px;
+}
+#Get-in-touch .up-section .right{
+    height: 100%;
+    width: 50%;
+    background-image: url("Car-right.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#Get-in-touch .down-section{
+    height:20%;
+    width: 100%;
+    background-color: #E2E6E9;
+}
+#Get-in-touch .down-section .writings{
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+
+}
+#Get-in-touch  .writings h1{
+    color: #661CE7;
+    /* font-weight: 800; */
+    font-size: 40px;
+    margin-top: 20px;
+
 }
