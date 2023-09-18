@@ -220,6 +220,7 @@ main button{
 }
 #we-follow .container .left-side{
     background-color: white;
+    position: relative;
 }
 #we-follow .container .right-side{
     background-color:white;
@@ -304,10 +305,17 @@ margin-left: 40px;
     width: 250px;
     height: 170px;
 }
+#we-offer .what-we-offer-content .what-we-offer-box .box .img{
+    margin-top: 40px;
+}
+#we-offer .what-we-offer-content .what-we-offer-box .box-3 .img{
+    margin-top: 40px;
+    
+}
 #we-offer .what-we-offer-content .what-we-offer-box .box i{
     margin-top: 50px;
 }
-#we-offer .what-we-offer-content .what-we-offer-box .box .box-3{
+#we-offer .what-we-offer-content .what-we-offer-box .box-3 {
     background-color: #FF6433;
     width: 250px;
     height: 170px;
@@ -378,7 +386,6 @@ margin-left: 40px;
 }
 #Get-in-touch  .writings h1{
     color: #661CE7;
-    /* font-weight: 800; */
     font-size: 40px;
     margin-top: 20px;
 
