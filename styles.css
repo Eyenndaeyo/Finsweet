@@ -96,7 +96,6 @@ height:100vh;
 width: 100%;
 margin: auto;
 display: flex;
-/* flex-direction: column; */
 align-items: baseline;
 justify-content: center;
 }
@@ -111,13 +110,11 @@ justify-content: center;
  main .container .right-side{
     width: 50%;
     height: 100%;
-    background-color: blue;
     background-image: url("Image.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-    
     }
 main .container .right-side .service{
     width: 90%;
@@ -168,10 +165,6 @@ main button{
     background-color: #E2E6E9;
     height: 100vh;
     width: 100%;
-    /* margin: auto; */
-}
-.car-service-home.right-side p {
-    
 }
 .we-take-car-form form input {
     width: 100%;
@@ -179,14 +172,10 @@ main button{
     margin-bottom: 10px;
     border: 0px;
 }
- /* form input ::placeholder{
-    margin-left: 70px;
-    
-} */
 #we-take-car .container .left-side p {
     font-family: Manrope;
     font-size: 58px;
-    font-weight: 800;
+    font-weight: 600;
     line-height: 76px;
     letter-spacing: -0.03em;
     text-align: left;
@@ -241,15 +230,19 @@ main button{
     background-color: white;
 }
 #we-follow .container .right-side{
-    background-color: white;
+    background-color:white;
+}
+#we-follow .container .right-side .right-side-side{
+margin-left: 40px;
 }
 #we-follow .container .left-side h1{
-    font-size: 58px;
-    font-weight: 800;
+    font-size: 50px;
+    font-weight: 600;
     line-height: 76px;
     letter-spacing: -0.03em;
     margin-top: 60px;
     margin-bottom: 20px;
+    /* text-align: left; */
 }
 #we-follow .container .left-side p{
  margin-bottom: 20px;
@@ -263,24 +256,29 @@ main button{
 
 #we-follow .container .right-side .icons {
     background-color: #661ce7;
-    height: 30px;
-    width: 30px;
+    height: 40px;
+    width: 40px;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
     color: white;
-
+}
+#we-follow .container .right-side .icons .vertical {
+    border-left: 2px dotted #FF6433;
+    height: 50px;
+    position:absolute;
+    left: 750px;
+  margin-top: 110px;
 }
 #we-follow .container .right-side .convenience .write-ups h4{
-    margin-bottom: 20px;
+    margin-bottom: 15px;
+    
+}
+#we-follow .container .right-side .convenience .write-ups {
     margin-top: 10px;
-    padding-left: 20px;
 }
-#we-follow  .get-a-quote{
-    border-left: 1px dotted #FF6433;
-    padding-left: 60px;
-}
+
 /* we offer styling begins here */
 #we-offer{
     background-color: #E2E6E9;
@@ -302,21 +300,26 @@ main button{
 #we-offer .what-we-offer-content .what-we-offer-box{
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 15px;
     justify-content: center;
+}
+#we-offer .what-we-offer-content .learn{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
 }
 #we-offer .what-we-offer-content .what-we-offer-box .box{
     background-color: white;
-    width: 220px;
-    height: 150px;
+    width: 250px;
+    height: 170px;
 }
 #we-offer .what-we-offer-content .what-we-offer-box .box i{
     margin-top: 50px;
 }
 #we-offer .what-we-offer-content .what-we-offer-box .box .box-3{
     background-color: #FF6433;
-    width: 220px;
-    height: 150px;
+    width: 250px;
+    height: 170px;
 }
 #we-offer .what-we-offer-content .what-we-offer-box .box .box-3 h6{
     color: white;
